@@ -10,7 +10,7 @@ import java.util.List;
 
 public class NewsAPIExample {
 
-    public static final String APIKEY = "myKey";    //TODO add your api key
+    public static final String APIKEY = "6001323e43f44f908aee1c0650e26d9e";    //TODO add your api key
 
     public static void main(String[] args){
 
@@ -22,11 +22,11 @@ public class NewsAPIExample {
                 .setSourceCategory(Category.health) // example of how to use enums
                 .createNewsApi();
 
-            NewsResponse newsResponse = newsApi.getNews();
-            if(newsResponse != null){
-                List<Article> articles = newsResponse.getArticles();
-                articles.stream().forEach(article -> System.out.println(article.toString()));
-            }
+        NewsResponse newsResponse = newsApi.getNews();
+        if(newsResponse != null){
+            List<Article> articles = newsResponse.getArticles();
+            articles.stream().forEach(article -> System.out.println(article.toString()));
+        }
 
         newsApi = new NewsApiBuilder()
                 .setApiKey(APIKEY)
