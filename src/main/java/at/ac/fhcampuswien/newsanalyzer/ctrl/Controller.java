@@ -2,7 +2,7 @@ package at.ac.fhcampuswien.newsanalyzer.ctrl;
 
 public class Controller {
 
-	public static final String APIKEY = "myAPIKey";  //TODO add your api key
+	public static final String APIKEY = "6001323e43f44f908aee1c0650e26d9e";  //TODO add your api key
 
 	public void process() {
 		System.out.println("Start process");
